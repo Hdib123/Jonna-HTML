@@ -389,3 +389,72 @@ you can use the generic selector below, but it's slower:
     display: table;
     clear: both;
 }
+
+/* Small screens (mobile devices, etc.) */
+@media (max-width: 1920px) {
+    .slide {
+        width: 120px; /* Further reduce slide width */
+        height: 140px; /* Further reduce slide height */
+    }
+
+    .slide img {
+        width: 110px; /* Further reduce image width */
+        height: 110px; /* Further reduce image height */
+    }
+}
+
+/* Small screens (mobile devices, etc.) */
+@media (max-width: 1500px) {
+	.slide {
+		width: 110px; /* Further reduce slide width */
+		height: 110px; /* Further reduce slide height */
+	}
+
+	.slide img {
+		width: 80px; /* Further reduce image width */
+		height: 80px; /* Further reduce image height */
+		
+	}
+}
+
+/* Small screens (mobile devices, etc.) */
+@media (max-width: 1211px) {
+    .slide {
+        width: 80px; /* Further reduce slide width */
+        height: 80px; /* Further reduce slide height */
+    }
+
+    .slide img {
+        width: 60px; /* Further reduce image width */
+        height: 60px; /* Further reduce image height */
+    }
+}
+
+
+
+/* Medium screens (tablets, etc.) */
+@media (max-width: 768px) {
+    .slide {
+        width: 85px; /* Reduce slide width */
+        height: 95px; /* Reduce slide height */
+    }
+
+    .slide img {
+        width: 80px; /* Reduce image width */
+        height: 80px; /* Reduce image height */
+    }
+}
+
+/* Small screens (mobile devices, etc.) */
+@media (max-width: 480px) {
+    .slide {
+        width: 70px; /* Further reduce slide width */
+        height: 80px; /* Further reduce slide height */
+		padding-left: 25px; /* center the icons*/
+    }
+
+    .slide img {
+        width: 70px; /* Further reduce image width */
+        height: 70px; /* Further reduce image height */
+    }
+}
