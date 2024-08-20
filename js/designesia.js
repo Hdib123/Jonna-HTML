@@ -1353,7 +1353,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Path to the images
     const originalSrc = "../images/Telegramn.png";
-    const hoverSrc = "../images/Telegramhovern.png";
+    const hoverSrc = "../images/TelegramHovern.png";
 
     telegramIcon.addEventListener("mouseenter", function() {
         telegramIcon.classList.remove("fade-in");
