@@ -1352,8 +1352,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const telegramIcon = document.getElementById("telegram-icon");
 
     // Path to the images
-    const originalSrc = "./images/telegram.png";
-    const hoverSrc = "./images/telegramhover.png";
+    const originalSrc = "../images/telegram.png";
+    const hoverSrc = "../images/telegramhover.png";
 
     telegramIcon.addEventListener("mouseenter", function() {
         telegramIcon.classList.remove("fade-in");
