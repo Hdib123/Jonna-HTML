@@ -362,22 +362,52 @@ you can use the generic selector below, but it's slower:
     align-items: center; /* Center vertically */
 }
 
-
 /* Style for the images inside the slides */
 .slide img {
-    width: 140px; /* Set the width of the image */
-    height: 140px; /* Set the height of the image */
+	width: 140px; /* Set the width of the image */
+	height: 140px; /* Set the height of the image */
+	filter: grayscale(40%); /* Grayscale the image by default */
+	transition: filter 0.3s ease, border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+	border-radius: 100px; /* Slightly rounded corners */
+	border: 2px solid transparent; /* Default transparent border */
+	animation: pulse 6s infinite ease-in-out; /* Apply passive pulse animation */
+}
+
+/* services slider */
+.slide2 {
+    float: left; /* Line up the icons horizontally */
+    width: 220px; /* Match the width of the image */
+    height: 200px; /* Increase height to add space */
+    margin: 0 15px; /* Space between icons horizontally */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    display: flex; /* Center content within the slide */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Style for the images inside the slides */
+.slide2 img {
+    width: 170px; /* Set the width of the image */
+    height: 170px; /* Set the height of the image */
     filter: grayscale(40%); /* Grayscale the image by default */
     transition: filter 0.3s ease, border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
     border-radius: 100px; /* Slightly rounded corners */
     border: 2px solid transparent; /* Default transparent border */
-    animation: pulse 6s infinite ease-in-out; /* Apply passive pulse animation */
+
+}
+
+/* Hover effect for the images */
+.slide2:hover img {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    border: none; /* Add blue border on hover */
+    box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7); /* Add a shadow to enhance the popping effect */
+    animation: none; /* Stop passive animation on hover */
 }
 
 /* Hover effect for the images */
 .slide:hover img {
     filter: grayscale(0%); /* Remove grayscale on hover */
-    border: 0px solid #ffffff; /* Add blue border on hover */
+    border: none; /* Add blue border on hover */
     box-shadow: 0px 10px 20px 2px rgba(0,255,255,0.7); /* Add a shadow to enhance the popping effect */
     transform: scale(1.1); /* Scale up the icon for a popping out effect */
     animation: none; /* Stop passive animation on hover */
@@ -401,6 +431,21 @@ you can use the generic selector below, but it's slower:
         width: 110px; /* Further reduce image width */
         height: 110px; /* Further reduce image height */
     }
+
+	.slide2 {
+        width: 180px; /* Further reduce slide width */
+        height: 180px; /* Further reduce slide height */
+		padding-left: 155px; /* center the icons*/
+    }
+
+    .slide2 img {
+        width: 160px; /* Further reduce image width */
+        height: 160px; /* Further reduce image height */
+    }
+
+	#blue-sub {
+		font-size: 33px;
+    }
 }
 
 /* Small screens (mobile devices, etc.) */
@@ -415,6 +460,20 @@ you can use the generic selector below, but it's slower:
 		height: 80px; /* Further reduce image height */
 		
 	}
+
+	.slide2 {
+        width: 130px; /* Further reduce slide width */
+        height: 130px; /* Further reduce slide height */
+    }
+
+    .slide2 img {
+        width: 120px; /* Further reduce image width */
+        height: 120px; /* Further reduce image height */
+    }
+	
+	#blue-sub {
+		font-size: 29px;
+    }
 }
 
 /* Small screens (mobile devices, etc.) */
@@ -428,12 +487,18 @@ you can use the generic selector below, but it's slower:
         width: 60px; /* Further reduce image width */
         height: 60px; /* Further reduce image height */
     }
+	
+	#blue-sub {
+		font-size: 26px;
+    }
+	
 }
 
 
 
+
 /* Medium screens (tablets, etc.) */
-@media (max-width: 768px) {
+@media (max-width: 821px) {
     .slide {
         width: 85px; /* Reduce slide width */
         height: 95px; /* Reduce slide height */
@@ -442,6 +507,21 @@ you can use the generic selector below, but it's slower:
     .slide img {
         width: 80px; /* Reduce image width */
         height: 80px; /* Reduce image height */
+    }
+
+	.slide2 {
+        width: 155px; /* Further reduce slide width */
+        height: 155px; /* Further reduce slide height */
+		padding-left:25px; /* center the icons*/
+    }
+
+    .slide2 img {
+        width: 140px; /* Further reduce image width */
+        height: 140px; /* Further reduce image height */
+    }
+	
+	#blue-sub {
+		font-size: 23px;
     }
 }
 
@@ -457,4 +537,98 @@ you can use the generic selector below, but it's slower:
         width: 70px; /* Further reduce image width */
         height: 70px; /* Further reduce image height */
     }
+	.slide2 {
+        width: 70px; /* Further reduce slide width */
+        height: 70px; /* Further reduce slide height */
+		padding-left: 10px; /* center the icons*/
+    }
+
+    .slide2 img {
+        width: 80px; /* Further reduce image width */
+        height: 80px; /* Further reduce image height */
+    }
+	
+	#blue-sub {
+		font-size: 21px;
+    }
 }
+
+
+/* Remove the ::after pseudo-element and its hover state */
+#telegram-icon {
+    transition: opacity 0.1s ease-in-out;
+	width: 18px;
+	padding-bottom: 5px;
+}
+
+#telegram-icon.fade-out {
+    opacity: 0;
+}
+
+#telegram-icon.fade-in {
+    opacity: 1;
+}
+
+
+.footer-basic {
+	padding:0px 0;
+	background-color:#ffffff;
+	color:#28489a;
+  }
+  
+  .footer-basic ul {
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+  }
+  
+  .footer-basic li {
+	padding:0 20px;
+	font-family: "neuzeit-grotesk";
+  }
+  
+  .footer-basic ul a {
+	color:inherit;
+	text-decoration:none;
+  }
+  
+  .footer-basic ul a:hover {
+	opacity:1;
+	color: #28489a;
+  }
+  
+  .footer-basic .social {
+	text-align:center;
+	padding-bottom:50px;
+  }
+  
+  .footer-basic .social > a {
+	font-size:24px;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:12px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+	opacity:0.9;
+	color: #28489a;
+  }
+  
+  .footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#28489a;
+	margin-bottom:0;
+  }
+

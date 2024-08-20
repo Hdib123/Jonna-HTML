@@ -985,7 +985,7 @@ section.overwidth{
 footer {
     background: #222222;
     color: #ccc;
-    padding: 80px 0 0px 0;
+    padding: 20px 0 0px 0;
 }
 
 footer h3,
@@ -2751,7 +2751,7 @@ h1 .small-border {
 
 h1.big,
 .h1_big {
-    font-size: 56px;
+    font-size: 66px;
     margin: 0;
     line-height: 65px;
 	letter-spacing:-2px;

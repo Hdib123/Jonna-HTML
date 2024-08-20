@@ -1348,3 +1348,32 @@
 
 })(jQuery);
 
+document.addEventListener("DOMContentLoaded", function() {
+    const telegramIcon = document.getElementById("telegram-icon");
+
+    // Path to the images
+    const originalSrc = "./images/telegram.png";
+    const hoverSrc = "./images/telegramhover.png";
+
+    telegramIcon.addEventListener("mouseenter", function() {
+        telegramIcon.classList.remove("fade-in");
+        telegramIcon.classList.add("fade-out");
+
+        setTimeout(() => {
+            telegramIcon.src = hoverSrc;
+            telegramIcon.classList.remove("fade-out");
+            telegramIcon.classList.add("fade-in");
+        }, 100); // Duration matches the CSS transition time
+    });
+
+    telegramIcon.addEventListener("mouseleave", function() {
+        telegramIcon.classList.remove("fade-in");
+        telegramIcon.classList.add("fade-out");
+
+        setTimeout(() => {
+            telegramIcon.src = originalSrc;
+            telegramIcon.classList.remove("fade-out");
+            telegramIcon.classList.add("fade-in");
+        }, 100); // Duration matches the CSS transition time
+    });
+});
