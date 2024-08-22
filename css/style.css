@@ -1741,19 +1741,14 @@ header.header-light .logo-2 {
 
 
 .arrow{
-  bottom: -2rem;
-  left: 50%;
-  margin-left:-20px;
-  position: absolute;
-  bottom:30px;
-    margin-left: -12px;
-    border-radius: 15px;
-    border: 1px solid #28489a;
-    -webkit-animation: intro 1s;
-    animation: intro 1s;
-	
-	font-size:24px;
-	color:#28489a;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -5826,7 +5821,7 @@ hr.blank {
 
 /* ================================================== */
 i {
-    display: inline-block !important;
+    display: inline-block;
 }
 i.large {
     font-size: 72px;

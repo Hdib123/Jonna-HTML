@@ -420,6 +420,29 @@ you can use the generic selector below, but it's slower:
     clear: both;
 }
 
+
+#guidance {
+	text-align: center;
+	font-size: 33px;
+	color: #ffffff;
+	font-family: "neuzeit-grotesk";
+	transition: all 0.3s ease;
+	cursor: pointer;
+	
+	padding: 10px 15px;
+	border-radius: 15px;
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+	border: 2px solid #28489a;
+}
+
+#guidance:hover {
+	color: #28489a;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 10px rgba(40, 72, 154, 0.5);
+}
+
 /* Small screens (mobile devices, etc.) */
 @media (max-width: 1920px) {
     .slide {
@@ -474,6 +497,7 @@ you can use the generic selector below, but it's slower:
 	#blue-sub {
 		font-size: 29px;
     }
+
 }
 
 /* Small screens (mobile devices, etc.) */
@@ -492,6 +516,9 @@ you can use the generic selector below, but it's slower:
 		font-size: 26px;
     }
 	
+	.arrow_down {
+		display: inline-block;
+	}
 }
 
 
@@ -539,7 +566,7 @@ you can use the generic selector below, but it's slower:
     }
 	.slide2 {
         width: 70px; /* Further reduce slide width */
-        height: 70px; /* Further reduce slide height */
+        height: 90px; /* Further reduce slide height */
 		padding-left: 10px; /* center the icons*/
     }
 
