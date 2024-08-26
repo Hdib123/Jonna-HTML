@@ -578,6 +578,10 @@ you can use the generic selector below, but it's slower:
 	#blue-sub {
 		font-size: 21px;
     }
+
+	.h1_big {
+		font-size: 26px !important;
+	}
 }
 
 
